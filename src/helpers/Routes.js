@@ -27,8 +27,4 @@ export default function Routes() {
   );
 }
 
-Routes.propTypes = {
-  students: PropTypes.array.isRequired,
-  setStudents: PropTypes.func.isRequired,
-  user: PropTypes.any
-};
+Routes.propTypes = {};
