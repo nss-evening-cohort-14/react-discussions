@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './styles/index.scss';
 import App from './App';
@@ -8,7 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.Fragment>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.Fragment>,
   document.getElementById('root')
 );
