@@ -1,13 +1,13 @@
-import React from 'react';
-import firebase from 'firebase/app';
-import { BrowserRouter as Router } from 'react-router-dom';
-import ReactDOM from 'react-dom';
-import './styles/index.scss';
-import firebaseConfig from './helpers/apiKeys';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+import firebase from 'firebase/app';
+import 'firebase/storage';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import App from './App';
+import firebaseConfig from './helpers/apiKeys';
+import reportWebVitals from './reportWebVitals';
+import './styles/index.scss';
 
 firebase.initializeApp(firebaseConfig);
 

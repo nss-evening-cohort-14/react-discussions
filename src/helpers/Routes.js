@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Home from '../views/Home';
+import ImageUpload from '../views/ImageUpload';
 import NotFound from '../views/NotFound';
 import Authors from '../views/Authors';
 import Books from '../views/Books';
@@ -23,6 +24,7 @@ export default function Routes({ books, setBooks }) {
     <div>
       <Switch>
         <Route exact path='/' component={Home} />
+        <Route exact path='/upload' component={ImageUpload} />
         <Route exact path='/authors' component={Authors} />
         <Route exact path='/books' component={() => <Books books={books} setBooks={setBooks}/>} />
         <Route path='*' component={NotFound} />
